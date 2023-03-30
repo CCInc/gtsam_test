@@ -3,9 +3,7 @@ project(gtsam_test
         LANGUAGES CXX C
         VERSION 1.0.0)
 
-find_package(GTSAM REQUIRED)
-find_package(TBB REQUIRED)
-find_package(metis REQUIRED)
+find_package(GTSAM CONFIG REQUIRED)
 
 add_executable(SimpleRotation SimpleRotation.cpp)
-target_link_libraries(SimpleRotation gtsam )
+target_link_libraries(SimpleRotation gtsam)
